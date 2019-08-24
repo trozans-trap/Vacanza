@@ -1,0 +1,80 @@
+.leftimg{
+	
+	float: left;
+}
+.topback{
+	background: url(http://boring-wozniak-22ce53.netlify.com/images/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+.csi
+{
+  text-decoration: none;
+  color: white;
+  font-size: 90%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  margin-left: 1%;
+}
+
+.header{
+text-align: center;
+margin-top: 6.5%;
+}
+.top{
+	background: #B3B8BD;
+	opacity: 0.75;
+}
+.main{
+	opacity: 0.85;
+	height: 400px;
+	width: 340px;
+	margin-left: 14%;
+}
+
+.vacanza{
+	font-size: 7.5em;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	margin-top: .5%;
+	color: white;
+	outline: grey;
+	margin-bottom: 0px;
+}
+.btns{
+	border: 2px solid #fff;
+	border-radius:15%;
+	color: #fff;
+	margin: 2% 2%;
+	background: none;
+	padding: 1% 1%;
+	margin-bottom: 6%;
+	margin-top: 0;
+	
+}
+.round
+{
+	margin: 4% 4%;
+	height: 10%;
+	border: 1px solid black;
+	background: #ffffff;
+}
+
+.block{
+	background: #eeeeee;
+}
+.image{
+	height: 25%;
+	width: 25%;
+}
+
+/*.right{
+	float: right;
+}
+*/
+.rightext{
+	float: left;
+}
