@@ -1,13 +1,13 @@
-.leftimg{
-	
-	float: left;
+*{
+	margin: 0 0;
+	font-family: 'Roboto',sans-serif;
 }
 .topback{
+
 	background: url(http://boring-wozniak-22ce53.netlify.com/images/background.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
-    
+    background-size: 100% ;   
 }
 
 .csi
@@ -21,18 +21,15 @@
 }
 
 .header{
-text-align: center;
 margin-top: 6.5%;
 }
 .top{
-	background: #B3B8BD;
-	opacity: 0.75;
+	background: #8D9194;
+	opacity: 0.9;
 }
 .main{
-	opacity: 0.85;
-	height: 400px;
-	width: 340px;
-	margin-left: 14%;
+	opacity: 0.9;
+	margin-left: 41%;
 }
 
 .vacanza{
@@ -43,38 +40,139 @@ margin-top: 6.5%;
 	color: white;
 	outline: grey;
 	margin-bottom: 0px;
+	text-align: center;
+	opacity: 1.0;
 }
 .btns{
-	border: 2px solid #fff;
-	border-radius:15%;
+	border: 2px solid white;
+	border-radius:50%;
+	letter-spacing: 3px;
+	opacity: 1;
 	color: #fff;
 	margin: 2% 2%;
 	background: none;
-	padding: 1% 1%;
+	padding: 2% 3%;
 	margin-bottom: 6%;
 	margin-top: 0;
+	font-family:  'Roboto', sans-serif;
 	
 }
 .round
 {
-	margin: 4% 4%;
+	margin: 3% 4%;
 	height: 10%;
 	border: 1px solid black;
 	background: #ffffff;
+	padding: 1.5%;
+	height: 10%;
+	width: 80%;
 }
 
 .block{
 	background: #eeeeee;
+	margin-bottom: 0;
+	padding-bottom: 3%;
 }
 .image{
-	height: 25%;
-	width: 25%;
+	height: 32%;
+	width: 32%;
 }
 
-/*.right{
-	float: right;
+.image:hover{
+	-webkit-transform:rotate(180deg);
 }
-*/
+
 .rightext{
 	float: left;
+	width: 68%;
+	height: 68%;
+	margin-bottom: 0%;
+	padding-bottom: 0%;
+	font-weight: 350;
+	font-size: 1.15em;
+	color: #A4A7AA;
+	line-height: 2em;
+}
+.bold{
+ color: #878A8C;
+ font-weight: 400;
+}
+.roundhead{
+	font-size: 1.2em;
+	font-weight: 550;
+	color: #454647;
+	padding: 0;
+}
+hr{
+	width: 95%;
+	color: #A4A7AA;
+	margin-bottom: 2%;
+}
+.rightimg{
+
+    padding-left: 1%;
+    margin-left: 1%;
+    clip: rect( , , 170px, 60px)
+}
+
+.leftimg{
+float: left;
+padding: 0;
+margin: 0;
+}
+
+.footer{
+	background: url(http://boring-wozniak-22ce53.netlify.com/images/footer.png);
+	margin: 0;
+	padding: 3%;
+	background-color: #256248;
+}
+
+.leftext{
+	width: 68%;
+	height: 68%;
+	margin: 0%;
+	padding: 0%;
+	font-weight: 350;
+	font-size: 1.15em;
+	color: #A4A7AA;
+	line-height: 2em;
+	margin: 0;
+	padding : 0;
+}
+
+.rule{
+	padding: 1.45% 2.5%;
+	border-radius:8%; 
+	border: 1px solid #256248;
+	color: #256248;
+	background: white;
+	font-size: .8em;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	width: 12%;
+	height: 8%;
+	font-weight: 500;
+}
+
+.rule:hover {
+	background: #256248;
+	color: white;
+
+}
+.akgec{
+	background-color: #256248;
+	color: white;
+	height: 2%;
+	font-size: .75em;
+	padding: 0.6% 0.6%;
+	margin: 0% 0%; 
+}
+
+.iconic{
+	
+	margin: 0 0;
+	padding: 0% 0%;
+	line-height: 10%;
+	color: white;
 }
