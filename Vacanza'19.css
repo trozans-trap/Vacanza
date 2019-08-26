@@ -1,27 +1,38 @@
 *{
 	margin: 0 0;
 	font-family: 'Roboto',sans-serif;
+
 }
 .topback{
 
-	background: url(http://boring-wozniak-22ce53.netlify.com/images/background.png);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(http://youthful-payne-737b43.netlify.com/images/background.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% ;   
 }
-
+.nav{
+	display: inline;
+}
 .csi
 {
   text-decoration: none;
   color: white;
-  font-size: 90%;
+  font-size: 75%;
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
   margin-left: 1%;
+  margin-top: 5%;
+  padding-top: 10%;
+}
+
+.csi:hover{
+	color: black;
 }
 
 .header{
 margin-top: 6.5%;
+
+
 }
 .top{
 	background: #8D9194;
@@ -30,18 +41,12 @@ margin-top: 6.5%;
 .main{
 	opacity: 0.9;
 	margin-left: 41%;
+	margin-top: 0% 0%;
 }
 
-.vacanza{
-	font-size: 7.5em;
-	text-transform: uppercase;
-	font-family: 'Roboto', sans-serif;
-	margin-top: .5%;
-	color: white;
-	outline: grey;
-	margin-bottom: 0px;
-	text-align: center;
-	opacity: 1.0;
+.vanz{
+	font-size: 0.5em;
+	margin: 2% 27%;
 }
 .btns{
 	border: 2px solid white;
@@ -57,41 +62,60 @@ margin-top: 6.5%;
 	font-family:  'Roboto', sans-serif;
 	
 }
+.btns:hover{
+	background: #00695c;
+	opacity: 0.75;
+}
 .round
 {
-	margin: 3% 4%;
-	height: 10%;
-	border: 1px solid black;
+	margin: 3% 9%;
+	height: 12%;
+	border: 1px  ;
 	background: #ffffff;
-	padding: 1.5%;
+	padding: 0% 0%;
 	height: 10%;
 	width: 80%;
+	box-shadow: 6px  7px 5px 5px #DEDFDE;
+
 }
 
-.block{
+.blocks{
 	background: #eeeeee;
 	margin-bottom: 0;
 	padding-bottom: 3%;
 }
 .image{
-	height: 32%;
-	width: 32%;
+	height: 31%;
+	width: 31%;
+}
+.image:hover{
+	opacity: 0.2;
 }
 
-.image:hover{
-	-webkit-transform:rotate(180deg);
+.main img:hover{
+   animation-name: rotate ;
+   animation-duration: 0.75s;
+   animation-direction: linear;
+   animation-iteration-count: infinite;
 }
+
+  @keyframes rotate
+  { 
+    100%{transform: rotate(360deg);transform: rotate(540deg);} 
+   }
+
 
 .rightext{
 	float: left;
-	width: 68%;
-	height: 68%;
+	width: 67%;
+	height: 67%;
 	margin-bottom: 0%;
-	padding-bottom: 0%;
+	/*padding-bottom: 0%;*/
 	font-weight: 350;
 	font-size: 1.15em;
 	color: #A4A7AA;
 	line-height: 2em;
+	padding: 2% 1%;
 }
 .bold{
  color: #878A8C;
@@ -102,48 +126,63 @@ margin-top: 6.5%;
 	font-weight: 550;
 	color: #454647;
 	padding: 0;
+
 }
-hr{
-	width: 95%;
-	color: #A4A7AA;
-	margin-bottom: 2%;
-}
+
 .rightimg{
 
     padding-left: 1%;
-    margin-left: 1%;
-    clip: rect( , , 170px, 60px)
+    padding-right: 0%;
+    margin-right:0%; 
+}
+
+.hel{
+   clip-path: polygon(56% 0, 100% 0, 100% 100%, 8% 100%);
+;
+
+}
+.bel{
+   clip-path: polygon(56% 0, 100% 0, 100% 100%, 8% 100%);
+
 }
 
 .leftimg{
-float: left;
-padding: 0;
-margin: 0;
-}
+	display:inline;
+    float: left;
+    width: 26.5%;
+    height: 33.5%;
+    padding-right: 2%;
+    clip-path: polygon(0 0, 45.5% 0, 92% 100%, 0% 100%);
 
-.footer{
-	background: url(http://boring-wozniak-22ce53.netlify.com/images/footer.png);
-	margin: 0;
-	padding: 3%;
-	background-color: #256248;
+
 }
 
 .leftext{
-	width: 68%;
-	height: 68%;
 	margin: 0%;
-	padding: 0%;
+	padding: 2% 1%;
 	font-weight: 350;
 	font-size: 1.15em;
 	color: #A4A7AA;
 	line-height: 2em;
+}
+
+.footer{
+	background-image: linear-gradient( rgba(0,150,49,0.5),rgba(0,150,49,0.5)), url(http://youthful-payne-737b43.netlify.com/images/footer.png);
 	margin: 0;
-	padding : 0;
+	padding: 3%;
+	background-color: #00695c;
+	animation: scaler 5s infinite; 
+	
+}
+
+@keyframes scaler{
+	0%{transform: scale(1.0);}
+	100%{transform: scale(0.5);}
 }
 
 .rule{
 	padding: 1.45% 2.5%;
-	border-radius:8%; 
+	border-radius: 15px;
 	border: 1px solid #256248;
 	color: #256248;
 	background: white;
@@ -153,15 +192,17 @@ margin: 0;
 	width: 12%;
 	height: 8%;
 	font-weight: 500;
+	text-decoration: none;
 }
 
 .rule:hover {
 	background: #256248;
 	color: white;
-
+    padding: 1.5em 2em ;
+    text-align: center;
 }
 .akgec{
-	background-color: #256248;
+	background-color: #00695c;
 	color: white;
 	height: 2%;
 	font-size: .75em;
@@ -172,7 +213,47 @@ margin: 0;
 .iconic{
 	
 	margin: 0 0;
-	padding: 0% 0%;
+	padding: 0% 0.3%;
 	line-height: 10%;
 	color: white;
+	font-size: 2em;
+	border-bottom:  1px dotted white;
 }
+.iconic:hover {
+	transform: rotate(18deg);
+}
+
+
+.under{
+	text-decoration: none;
+	color: #256248;
+}
+
+.under:hover{
+	color: white;
+}
+
+.dropcontent{
+margin-right: 0;
+margin-left: 80%;
+margin-bottom: 0;
+}
+.dropbtn{
+	margin: 1% 1%;
+	text-decoration: none;
+	border-radius: 15%;
+	padding:  3% 6%; 
+	box-shadow: 0px 0px 0px 0px;
+	outline: 0 0 ;
+	background: #1E1F20;
+    color: white;
+ }
+
+ .lin{
+ 	text-decoration: none;
+ 	color: white;
+ }
+ .line {
+ 		width: 70%;
+	color: #A4A7AA;
+	/*margin-bottom: 2%;*/}
