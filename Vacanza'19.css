@@ -1,38 +1,41 @@
 *{
-	margin: 0 0;
+	margin: 0% 0%;
 	font-family: 'Roboto',sans-serif;
+	padding-top: 0%;
 
 }
 .topback{
 
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(http://youthful-payne-737b43.netlify.com/images/background.png);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(background.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% ;   
+    background-size: 100% ; 
+    margin-bottom: 0;  
 }
-.nav{
-	display: inline;
+.navbar{
+	padding-top: 1%;
+	/*overflow: hidden;
+	position: fixed;*/
+	top: 0;
+	margin: 0% 0%;
 }
 .csi
 {
   text-decoration: none;
   color: white;
-  font-size: 75%;
+  font-size: 25px;
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
   margin-left: 1%;
-  margin-top: 5%;
-  padding-top: 10%;
+  padding-right: 75%;
 }
 
 .csi:hover{
-	color: black;
+	color: #000000;
 }
 
 .header{
-margin-top: 6.5%;
-
-
+margin-top: 4.5%;
 }
 .top{
 	background: #8D9194;
@@ -40,23 +43,29 @@ margin-top: 6.5%;
 }
 .main{
 	opacity: 0.9;
-	margin-left: 41%;
-	margin-top: 0% 0%;
+	margin-left: 42.7%;
+	margin-top: 6.3% ;
 }
 
 .vanz{
+
 	font-size: 0.5em;
 	margin: 2% 27%;
 }
+
+.log{
+	width: 24%;
+	height: 24%;
+}
 .btns{
 	border: 2px solid white;
-	border-radius:50%;
+	border-radius: 25px 25px;
 	letter-spacing: 3px;
 	opacity: 1;
 	color: #fff;
 	margin: 2% 2%;
 	background: none;
-	padding: 2% 3%;
+	padding: 1.3% 2%;
 	margin-bottom: 6%;
 	margin-top: 0;
 	font-family:  'Roboto', sans-serif;
@@ -71,7 +80,7 @@ margin-top: 6.5%;
 	margin: 3% 9%;
 	height: 12%;
 	border: 1px  ;
-	background: #ffffff;
+	background: #fff;
 	padding: 0% 0%;
 	height: 10%;
 	width: 80%;
@@ -88,22 +97,33 @@ margin-top: 6.5%;
 	height: 31%;
 	width: 31%;
 }
-.image:hover{
-	opacity: 0.2;
-}
 
 .main img:hover{
    animation-name: rotate ;
-   animation-duration: 0.75s;
+   animation-duration: 1s;
    animation-direction: linear;
-   animation-iteration-count: infinite;
+   animation-iteration-count: 1;
+   animation-timing-function: alternate;
+   /*transition: 4s;*/
 }
 
   @keyframes rotate
   { 
-    100%{transform: rotate(360deg);transform: rotate(540deg);} 
+    100%{transform: rotate(720deg);} 
    }
 
+.bye{
+    padding-right: 0;
+} 
+
+ .bye:hover{
+ 	animation: scale 1s ease-out 1;
+ }  
+  @keyframes scale
+  {
+       from{transform:scale(1);}
+       to{transform:scale(1.1);}
+  }
 
 .rightext{
 	float: left;
@@ -149,16 +169,14 @@ margin-top: 6.5%;
 .leftimg{
 	display:inline;
     float: left;
-    width: 26.5%;
-    height: 33.5%;
+    width: 26.85%;
+    height: 33.85%;
     padding-right: 2%;
     clip-path: polygon(0 0, 45.5% 0, 92% 100%, 0% 100%);
-
-
 }
 
 .leftext{
-	margin: 0%;
+	margin-bottom: 0%;
 	padding: 2% 1%;
 	font-weight: 350;
 	font-size: 1.15em;
@@ -167,17 +185,29 @@ margin-top: 6.5%;
 }
 
 .footer{
-	background-image: linear-gradient( rgba(0,150,49,0.5),rgba(0,150,49,0.5)), url(http://youthful-payne-737b43.netlify.com/images/footer.png);
+	background-image: linear-gradient( rgba(0,150,49,0.5),rgba(0,150,49,0.5)), url(footer.png);
 	margin: 0;
 	padding: 3%;
 	background-color: #00695c;
-	animation: scaler 5s infinite; 
-	
+	animation: scaler 20s infinite linear alternate ; 
+	overflow: hidden;
+	width: 100%;
+	height: 6%;
 }
 
 @keyframes scaler{
 	0%{transform: scale(1.0);}
-	100%{transform: scale(0.5);}
+	100%{transform: scale(1.4);}
+}
+
+.overflow{
+	overflow: hidden;
+}
+
+#contact{
+	border-bottom: 1px dotted white;
+	margin-left: 44%;
+	margin-right: 47%;
 }
 
 .rule{
@@ -212,12 +242,12 @@ margin-top: 6.5%;
 
 .iconic{
 	
-	margin: 0 0;
+	margin: 0 2%;
 	padding: 0% 0.3%;
 	line-height: 10%;
 	color: white;
 	font-size: 2em;
-	border-bottom:  1px dotted white;
+	/*border-bottom:  1px dotted white;*/
 }
 .iconic:hover {
 	transform: rotate(18deg);
@@ -239,14 +269,17 @@ margin-left: 80%;
 margin-bottom: 0;
 }
 .dropbtn{
-	margin: 1% 1%;
 	text-decoration: none;
-	border-radius: 15%;
-	padding:  3% 6%; 
-	box-shadow: 0px 0px 0px 0px;
+	border-radius: 9px 9px; 
 	outline: 0 0 ;
-	background: #1E1F20;
+	padding: 0.5% 1.3%;
+	margin-left: 0.5%;
+	background: #34383B;
     color: white;
+ }
+
+ .dropbtn:hover{
+ 	background: #000000;
  }
 
  .lin{
@@ -257,3 +290,5 @@ margin-bottom: 0;
  		width: 70%;
 	color: #A4A7AA;
 	/*margin-bottom: 2%;*/}
+
+
