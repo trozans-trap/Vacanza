@@ -13,21 +13,23 @@
     margin-bottom: 0;  
 }
 .navbar{
-	padding-top: 1%;
-	/*overflow: hidden;
-	position: fixed;*/
 	top: 0;
-	margin: 0% 0%;
+	margin:  0% 75% ;
+	position: fixed;
+	display: flex;
+
 }
+
 .csi
 {
   text-decoration: none;
   color: white;
   font-size: 25px;
   font-family: 'Raleway', sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   margin-left: 1%;
   padding-right: 75%;
+  
 }
 
 .csi:hover{
@@ -57,24 +59,51 @@ margin-top: 4.5%;
 	width: 24%;
 	height: 24%;
 }
+
+.btns {
+  border-radius: 28px;
+  background: none;
+  opacity: 1;
+  border: 2px solid #fff;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 140px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 12px 12px 120px 0px;
+}
+
 .btns{
-	border: 2px solid white;
-	border-radius: 25px 25px;
-	letter-spacing: 3px;
-	opacity: 1;
-	color: #fff;
-	margin: 2% 2%;
-	background: none;
-	padding: 1.3% 2%;
-	margin-bottom: 6%;
-	margin-top: 0;
-	font-family:  'Roboto', sans-serif;
-	
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
+
+.btns:after {
+  content: '\2192';
+  position: absolute;
+  opacity: 0;  
+  top: 9px;
+  right: -20px;
+  transition: 0.5s;
+}
+
 .btns:hover{
-	background: #00695c;
-	opacity: 0.75;
+  padding-right: 24px;
+  padding-left:8px;
+  background: #00695c;
+  opacity: 0.75;
 }
+
+.btns:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+
 .round
 {
 	margin: 3% 9%;
@@ -92,38 +121,26 @@ margin-top: 4.5%;
 	background: #eeeeee;
 	margin-bottom: 0;
 	padding-bottom: 3%;
+	padding-top: 0%;
 }
 .image{
-	height: 31%;
-	width: 31%;
+	height: 31.5%;
+	width: 31.2%;
 }
+ .log{
+   transition: transform;
+	transition: 4s;
+ }
+ 
+ .bye{
+ 	transition: transform 0.6s;
+ }
 
 .main img:hover{
-   animation-name: rotate ;
-   animation-duration: 1s;
-   animation-direction: linear;
-   animation-iteration-count: 1;
-   animation-timing-function: alternate;
-   /*transition: 4s;*/
+
+    transform: scale(1.15) rotate(720deg) ;
+    transition-duration: 0.7s; 
 }
-
-  @keyframes rotate
-  { 
-    100%{transform: rotate(720deg);} 
-   }
-
-.bye{
-    padding-right: 0;
-} 
-
- .bye:hover{
- 	animation: scale 1s ease-out 1;
- }  
-  @keyframes scale
-  {
-       from{transform:scale(1);}
-       to{transform:scale(1.1);}
-  }
 
 .rightext{
 	float: left;
@@ -153,7 +170,12 @@ margin-top: 4.5%;
 
     padding-left: 1%;
     padding-right: 0%;
-    margin-right:0%; 
+    margin:0% 0%;
+}
+
+.rmg1{
+	background-image: url(vintage.jpg);
+	background-repeat: no-repeat;
 }
 
 .hel{
@@ -189,7 +211,7 @@ margin-top: 4.5%;
 	margin: 0;
 	padding: 3%;
 	background-color: #00695c;
-	animation: scaler 20s infinite linear alternate ; 
+	animation: scaler 18s infinite linear alternate ; 
 	overflow: hidden;
 	width: 100%;
 	height: 6%;
@@ -228,8 +250,9 @@ margin-top: 4.5%;
 .rule:hover {
 	background: #256248;
 	color: white;
-    padding: 1.5em 2em ;
+    padding: 1.5em 2.2em ;
     text-align: center;
+    margin-bottom: 0.2%;
 }
 .akgec{
 	background-color: #00695c;
@@ -270,12 +293,18 @@ margin-bottom: 0;
 }
 .dropbtn{
 	text-decoration: none;
-	border-radius: 9px 9px; 
+	border-radius: 5px; 
 	outline: 0 0 ;
-	padding: 0.5% 1.3%;
-	margin-left: 0.5%;
+	opacity: 0.1;
+	padding: 8px 12px;
+	margin: 10px 13px;
 	background: #34383B;
+	font-size: 1.12em;
+	outline: none;
+	opacity: 0.9;
     color: white;
+    float: right;
+    z-index: 1;
  }
 
  .dropbtn:hover{
@@ -290,5 +319,14 @@ margin-bottom: 0;
  		width: 70%;
 	color: #A4A7AA;
 	/*margin-bottom: 2%;*/}
+
+.rightimg4{
+	background-image: url(vintage.jpg);
+	background-repeat: no-repeat;
+    clip-path: polygon(56% 0, 100% 0, 100% 100%, 8% 100%);
+	height: 400px;
+	width: 400px;
+	margin-left: 67%;
+}
 
 
